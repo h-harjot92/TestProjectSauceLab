@@ -16,6 +16,13 @@ namespace TestProjectSauceLab
 
         public Capabilities mobileCapabilities { get;  set; }
         public AppiumDriver<AppiumWebElement> Drivers;
+        public static string HubUrlPart => "ondemand.us-west-1.saucelabs.com/wd/hub";
+        public string SauceUser => Environment.GetEnvironmentVariable("SAUCE_USERNAME", EnvironmentVariableTarget.User);
+
+        public string SauceAccessKey =>
+            Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY", EnvironmentVariableTarget.User);
+
+        public string Url => $"https://{SauceUser}:{SauceAccessKey}@{HubUrlPart}";
         private static DriversSetup instance = null;
         DriversSetup()
         {
@@ -49,7 +56,7 @@ namespace TestProjectSauceLab
             // capabilities.AddAdditionalCapability("app", "https://github.com/saucelabs/sample-app-mobile/releases/download/2.5.0/Android.SauceLabs.Mobile.Sample.app.2.5.0.apk");
             capabilities.AddAdditionalCapability("app", mobileCapabilities.desiredCapabilities.App);
  
-            string Url = $"https://{mobileCapabilities.sauceLabKeys.SauceUser}:{mobileCapabilities.sauceLabKeys.SauceAccessKey}@{mobileCapabilities.sauceLabKeys.hubUrlPort}";
+           // string Url = $"https://{mobileCapabilities.sauceLabKeys.SauceUser}:{mobileCapabilities.sauceLabKeys.SauceAccessKey}@{mobileCapabilities.sauceLabKeys.hubUrlPort}";
             if (mobileCapabilities.desiredCapabilities.PlatformName.Equals("Android", StringComparison.OrdinalIgnoreCase))
             {
                 capabilities.AddAdditionalCapability("appActivity", mobileCapabilities.desiredCapabilities.AppActivity);
