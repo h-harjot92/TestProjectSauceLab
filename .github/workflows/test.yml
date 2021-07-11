@@ -7,7 +7,8 @@ jobs:
         name: Action Test
         steps:
             - uses: actions/checkout@v1
-            - uses: ./
+            - name: Setup dotnet
+              uses: actions/setup-dotnet@v1
               with:
                 username: ${{ secrets.SAUCE_USERNAME }}
                 accessKey: ${{ secrets.SAUCE_ACCESS_KEY }}
