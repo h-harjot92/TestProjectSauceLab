@@ -7,7 +7,7 @@
     "platformName": "Android", 
     "app": "storage:filename=AndroidSampleApp.apk",
     "appiumVersion": "1.20.1", //"1.20.2", //"1.20.1"
-    "appActivity": "com.swaglabsmobileapp.SplashActivity" //SplashActivity
+    "appActivity": "com.swaglabsmobileapp.SplashActivity" 
     //"newCommandTimeout":"180"
   },
   "sauceLabKeys": {
