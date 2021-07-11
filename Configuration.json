@@ -1,20 +1,18 @@
-﻿{
+{
   "desiredCapabilities": {
     "deviceName": "Google Pixel 3 GoogleAPI Emulator", // "iPhone 11 Pro Simulator"
     "browserName": "",
     "platformVersion": "10.0",
-    "appPackage": "com.swaglabsmobileapp"
-    "platformName":  "Android",
-    "app":  "storage:filename=AndroidSampleApp.apk" , 
-    "appiumVersion": "1.20.1", 
+    "appPackage": "com.swaglabsmobileapp",
+    "platformName": "Android", 
+    "app": "storage:filename=AndroidSampleApp.apk",
+    "appiumVersion": "1.20.1", //"1.20.2", //"1.20.1"
     "appActivity": "crc64ad68f59cd763e462.MainActivity" //SplashActivity
     //"newCommandTimeout":"180"
   },
-    "sauceLabKeys": {
-      "SauceUser": "",
-      "SauceAccessKey": "",
-      "hubUrlPort": "ondemand.us-west-1.saucelabs.com:443/wd/hub",
-    }
+  "sauceLabKeys": {
+    "SauceUser": "",
+    "SauceAccessKey": "",
+    "hubUrlPort": "ondemand.us-west-1.saucelabs.com:443/wd/hub"
   }
-
-
+}
