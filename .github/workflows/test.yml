@@ -15,8 +15,7 @@ jobs:
                 tunnelIdentifier: github-action-tunnel
 
             - name: "Install Dependencies"
-            - run: dotnet build <my project>
-
+              run: dotnet build <my project>
               env:
                 SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
                 SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
