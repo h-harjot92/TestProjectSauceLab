@@ -17,12 +17,12 @@ namespace TestProjectSauceLab
         public Capabilities mobileCapabilities { get;  set; }
         public AppiumDriver<AppiumWebElement> Drivers;
         public static string HubUrlPart => "ondemand.us-west-1.saucelabs.com/wd/hub";
-        public string SauceUser => Environment.GetEnvironmentVariable("SAUCE_USERNAME", EnvironmentVariableTarget.User);
+//         public string SauceUser => Environment.GetEnvironmentVariable("SAUCE_USERNAME", EnvironmentVariableTarget.User);
 
-        public string SauceAccessKey =>
-            Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY", EnvironmentVariableTarget.User);
+//         public string SauceAccessKey =>
+//             Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY", EnvironmentVariableTarget.User);
 
-        public string Url => $"https://{SauceUser}:{SauceAccessKey}@{HubUrlPart}";
+        public string Url = "https://oauth-mobileapp9292-9a51c:6107402c-8acd-47c6-a643-223912c38f87@ondemand.eu-central-1.saucelabs.com:443/wd/hub";
         private static DriversSetup instance = null;
         DriversSetup()
         {
