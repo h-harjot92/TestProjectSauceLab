@@ -42,7 +42,7 @@ namespace TestProjectSauceLab
 
         public AppiumDriver<AppiumWebElement> InitDrivers ()
         {
-            var filepath = Path.Combine(System.IO.Directory.GetCurrentDirectory().Replace("\\bin\\Debug\\net5.0", ""), "Configuration.json");
+            var filepath = Path.Combine(System.IO.Directory.GetCurrentDirectory().Replace("/bin/Debug/net5.0", ""), "Configuration.json");
             var file = File.ReadAllText(filepath);
             mobileCapabilities = JsonConvert.DeserializeObject<Capabilities>(file);
 
