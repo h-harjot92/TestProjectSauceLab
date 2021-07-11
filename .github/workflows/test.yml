@@ -12,8 +12,10 @@ jobs:
             - name: Hello world action step
               uses: moatazeldebsy/sauce-labs-app-automate-action@V1.0.1
               with:
-               device_name: 'Google Pixel GoogleAPI Emulator,platformVersion=10.0'
-               data_center: 'eu-central-1'
+                apk_path: '/app/AndroidSampleApp.apk'
+                test_apk_path: '/app/AndroidSampleApp.apk'
+                device_name: 'Google Pixel GoogleAPI Emulator,platformVersion=10.0'
+                data_center: 'eu-central-1'
               env:
                SAUCELABS_ACCESS_KEY: ${{ secrets.SAUCELABS_ACCESS_KEY }}
                SAUCELABS_USERNAME: ${{ secrets.SAUCELABS_USERNAME }}
