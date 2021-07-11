@@ -4,9 +4,9 @@
     "browserName": "",
     "platformVersion": "10.0",
     "appPackage": "com.swaglabsmobileapp"
-    "platformName":  "Android", //"iOS" // "Android"
-    "app":  "storage:filename=AndroidSampleApp.apk" ,         //"storage:filename=iOS.Simulator.SauceLabs.Mobile.Sample.app.2.7.1.zip", // "https://github.com/h-harjot92/AndroidApkForAutomation/raw/main/SampleAppAutomation.apk", //storage:6465f3a1-776d-4213-9bef-f4f37b89849a , "storage:filename=iOS.Simulator.SauceLabs.Mobile.Sample.app.2.7.1.zip"
-    "appiumVersion": "1.20.1", //"1.20.2", //"1.20.1"
+    "platformName":  "Android",
+    "app":  "storage:filename=AndroidSampleApp.apk" , 
+    "appiumVersion": "1.20.1", 
     "appActivity": "crc64ad68f59cd763e462.MainActivity" //SplashActivity
     //"newCommandTimeout":"180"
   },
