@@ -50,7 +50,6 @@ namespace TestProjectSauceLab
             capabilities.AddAdditionalCapability("deviceName", mobileCapabilities.desiredCapabilities.DeviceName);
             capabilities.AddAdditionalCapability("platformVersion", mobileCapabilities.desiredCapabilities.PlatformVersion);
             capabilities.AddAdditionalCapability("platformName", mobileCapabilities.desiredCapabilities.PlatformName);
-        //    capabilities.AddAdditionalCapability("browserName", "");
             capabilities.AddAdditionalCapability("appiumVersion", mobileCapabilities.desiredCapabilities.AppiumVersion);
           
             // capabilities.AddAdditionalCapability("app", "https://github.com/saucelabs/sample-app-mobile/releases/download/2.5.0/Android.SauceLabs.Mobile.Sample.app.2.5.0.apk");
