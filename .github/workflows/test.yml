@@ -15,7 +15,7 @@ jobs:
                 tunnelIdentifier: github-action-tunnel
 
             - name: build with dotnet
-              run: dotnet build <my project>
+              run: dotnet build --configuration release
             - name: run Test
               run: dotnet test
               env:
