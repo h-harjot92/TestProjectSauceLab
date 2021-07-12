@@ -22,8 +22,8 @@ namespace TestProjectSauceLab
             //   Assert.AreEqual(passwordInput.Text, "secret_sauce");
             var loginBtn = Drivers.FindElementByAccessibilityId("test-LOGIN");
             loginBtn.Click();
-            var cart = Drivers.FindElementByName("test-Cart");
-            Assert.IsTrue(cart.Displayed);
+            //var cart = Drivers.FindElementByName("test-Cart");
+            //Assert.IsTrue(cart.Displayed);
         }
 
         [Test]
