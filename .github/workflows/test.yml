@@ -12,5 +12,7 @@ jobs:
 
             - name: build with dotnet
               run: dotnet build --configuration release
+            - name : check dont net version
+              run : dotnet --info
             - name: run Test
               run: dotnet test --filter TestCategory=Sanity
